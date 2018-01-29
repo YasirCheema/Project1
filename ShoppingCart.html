@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="row">
+        <ul class="main-nav">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="Product.html"> Product</a></li>
+            <li><a href="ProductDetail.html"> Product Details </a></li>
+            <li><a href="ShoppingCart.html"> Shopping Cart </a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="product">
+    <h2>Niki</h2>
+    <img  src="images/nike.jpg" width="8%">
+    $99.99</img>
+</div><br /><br />
+
+    <div class="shipto">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">United States</option>
+                <option value="canada">Canada</option>
+                <option value="usa">China</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+</div>
+
+</body>
+</html>
